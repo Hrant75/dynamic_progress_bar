@@ -13,7 +13,7 @@
         android:layout_weight="1">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -55,7 +55,7 @@
         android:layout_weight="1">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -97,11 +97,9 @@
         android:layout_weight="1">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/toggles_checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="35dp"
             android:text="Enable Toggles" />
 
@@ -111,7 +109,7 @@
             android:orientation="horizontal">
 
             <ToggleButton
-                android:id="@+id/toggleButton"
+                android:id="@+id/toggleButton_x2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -120,7 +118,7 @@
                 android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton2"
+                android:id="@+id/toggleButton_x4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -129,7 +127,7 @@
                 android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton3"
+                android:id="@+id/toggleButton_x6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -138,7 +136,7 @@
                 android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton4"
+                android:id="@+id/toggleButton_x8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -166,21 +164,21 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButton_div2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Divide by 2" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButton_div4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Divide by 4" />
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButton_div8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -188,7 +186,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_clear_all_radios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Clear Radio button selection" />
@@ -206,21 +204,21 @@
         android:layout_weight="1">
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/switch_add10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Add 10 to progress" />
 
         <Switch
-            android:id="@+id/switch2"
+            android:id="@+id/switch_add20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Add 20 to progress" />
 
         <Switch
-            android:id="@+id/switch3"
+            android:id="@+id/switch_add30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
