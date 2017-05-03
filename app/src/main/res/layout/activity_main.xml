@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="5dp"
     tools:context="com.example.hrant.dynamicprogressbar.MainActivity">
 
     <LinearLayout
@@ -37,9 +38,10 @@
             android:id="@+id/progress_editText"
             android:layout_width="100dp"
             android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:inputType="number"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="max"/>
+            android:hint="max" />
 
     </LinearLayout>
 
@@ -64,7 +66,6 @@
                 android:id="@+id/seek_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1" />
 
             <TextView
@@ -80,7 +81,8 @@
             android:layout_width="97dp"
             android:layout_height="match_parent"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:digits="0123456789"
+            android:inputType="number"
             android:hint="max"/>
 
     </LinearLayout>
@@ -101,6 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
+            android:checked="true"
             android:text="Enable Toggles" />
 
         <LinearLayout
@@ -163,6 +166,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/radioButton_div2"
                 android:layout_width="wrap_content"
@@ -183,6 +189,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Divide by 8" />
+            </RadioGroup>
         </LinearLayout>
 
         <Button
