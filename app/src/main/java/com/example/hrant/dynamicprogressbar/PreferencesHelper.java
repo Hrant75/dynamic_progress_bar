@@ -197,16 +197,4 @@ public class PreferencesHelper {
         editor.putBoolean(SWITCH_ADD30, value);
         editor.apply();
     }
-
-
-//    public long getUserId() {
-//        return preferences.getLong(USER_ID, -1);
-//    }
-//
-//    public void setUserId(long userId) {
-//        final SharedPreferences.Editor editor = getEditor();
-//
-//        editor.putLong(USER_ID, userId);
-//        editor.apply();
-//    }
 }

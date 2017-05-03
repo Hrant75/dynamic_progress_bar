@@ -141,12 +141,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     toggleButton2x.setChecked(false);
                     preferencesHelper.setToggle2xState(false);
                     toggleButton2x.setEnabled(false);
+
                     toggleButton4x.setChecked(false);
                     preferencesHelper.setToggle4xState(false);
                     toggleButton4x.setEnabled(false);
+
                     toggleButton6x.setChecked(false);
                     preferencesHelper.setToggle6xState(false);
                     toggleButton6x.setEnabled(false);
+
                     toggleButton8x.setChecked(false);
                     preferencesHelper.setToggle8xState(false);
                     toggleButton8x.setEnabled(false);
@@ -156,24 +159,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         calculateProgressBarValue();
-    }
-
-    private void calculateProgressBarValue(){
-        int progressBarValue;
-        progressBarValue = seekBar.getProgress();
-        progressBarValue = toggleButton2x.isChecked()? progressBarValue * 2: progressBarValue;
-        progressBarValue = toggleButton4x.isChecked()? progressBarValue * 4: progressBarValue;
-        progressBarValue = toggleButton6x.isChecked()? progressBarValue * 6: progressBarValue;
-        progressBarValue = toggleButton8x.isChecked()? progressBarValue * 8: progressBarValue;
-        progressBarValue = radioButton_div2.isChecked()? progressBarValue / 2: progressBarValue;
-        progressBarValue = radioButton_div4.isChecked()? progressBarValue / 4: progressBarValue;
-        progressBarValue = radioButton_div8.isChecked()? progressBarValue / 8: progressBarValue;
-        progressBarValue = aSwitch_add10.isChecked()? progressBarValue + 10: progressBarValue;
-        progressBarValue = aSwitch_add20.isChecked()? progressBarValue + 20: progressBarValue;
-        progressBarValue = aSwitch_add30.isChecked()? progressBarValue + 30: progressBarValue;
-        progressBar.setProgress(progressBarValue);
-        textViewProgress.setText("ProgressBar: " + String.valueOf(progressBar.getProgress()));
-        textViewSeek.setText("SeekBar: " + String.valueOf(seekBar.getProgress()));
     }
 
     @Override
@@ -192,5 +177,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         preferencesHelper.setSwitchAdd10State(aSwitch_add10.isChecked());
         preferencesHelper.setSwitchAdd20State(aSwitch_add20.isChecked());
         preferencesHelper.setSwitchAdd30State(aSwitch_add30.isChecked());
+    }
+
+    private void calculateProgressBarValue(){
+        int progressBarValue;
+        progressBarValue = seekBar.getProgress();
+        progressBarValue = toggleButton2x.isChecked()? progressBarValue * 2: progressBarValue;
+        progressBarValue = toggleButton4x.isChecked()? progressBarValue * 4: progressBarValue;
+        progressBarValue = toggleButton6x.isChecked()? progressBarValue * 6: progressBarValue;
+        progressBarValue = toggleButton8x.isChecked()? progressBarValue * 8: progressBarValue;
+        progressBarValue = radioButton_div2.isChecked()? progressBarValue / 2: progressBarValue;
+        progressBarValue = radioButton_div4.isChecked()? progressBarValue / 4: progressBarValue;
+        progressBarValue = radioButton_div8.isChecked()? progressBarValue / 8: progressBarValue;
+        progressBarValue = aSwitch_add10.isChecked()? progressBarValue + 10: progressBarValue;
+        progressBarValue = aSwitch_add20.isChecked()? progressBarValue + 20: progressBarValue;
+        progressBarValue = aSwitch_add30.isChecked()? progressBarValue + 30: progressBarValue;
+        progressBar.setProgress(progressBarValue);
+        textViewProgress.setText("ProgressBar: " + String.valueOf(progressBar.getProgress()));
+        textViewSeek.setText("SeekBar: " + String.valueOf(seekBar.getProgress()));
     }
 }
